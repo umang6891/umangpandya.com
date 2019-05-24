@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './common/sidebar/sidebar.component';
 import { IndexComponent } from './app-website/index/index.component';
 import { BaseComponent } from './app-website/base/base.component';
+import { ContactComponent } from './app-website/contact/contact.component';
 /* End Componenets */
 
 
@@ -17,6 +18,7 @@ import { BaseComponent } from './app-website/base/base.component';
     SidebarComponent,
     IndexComponent,
     BaseComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

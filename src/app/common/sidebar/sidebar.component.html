@@ -1,11 +1,10 @@
 <h1 id="colorlib-logo"><a href=""><img style="width:100px;" src="assets/images/logo.png"/></a></h1>
 <nav id="colorlib-main-menu" role="navigation">
   <ul>
-    <li class="colorlib-active"><a routerLink="/">Home</a></li>
-    <li><a routerLink="photography">Photography</a></li>
-    <li><a routerLink="travel">Travel</a></li>
-    <li><a routerLink="fashion">Fashion</a></li>
-    <li><a routerLink="about">About</a></li>
-    <li><a routerLink="contact">Contact</a></li>
+    <li *ngFor="let navigation of navigationOptions"
+      routerLinkActive="colorlib-active"
+      [routerLinkActiveOptions]="{exact:true}">
+      <a routerLink="{{navigation.url}}">{{navigation.title}}</a>
+    </li>
   </ul>
 </nav>

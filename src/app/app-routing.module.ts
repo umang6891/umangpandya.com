@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './common/sidebar/sidebar.component';
 import { IndexComponent } from './app-website/index/index.component';
 import { BaseComponent } from './app-website/base/base.component';
+import { ContactComponent } from './app-website/contact/contact.component';
 /* End Componenets */
 
 const routes: Routes = [
@@ -16,39 +17,10 @@ const routes: Routes = [
       {
         path: '',
         component: IndexComponent,
+      }, {
+        path: 'contact',
+        component: ContactComponent,
       },
-      // {
-      //   path: 'about-me',
-      //   component: AppAboutComponent,
-      // },
-      // {
-      //   path: 'skill',
-      //   component: AppSkillComponent,
-      // },
-      // {
-      //   path: 'experience',
-      //   component: AppExperienceComponent,
-      // },
-      // {
-      //   path: 'education',
-      //   component: AppEducationComponent,
-      // },
-      // {
-      //   path: 'my-work',
-      //   component: AppMyWorkComponent,
-      // },
-      // {
-      //   path: 'contact-me',
-      //   component: AppContactMeComponent,
-      // },
-      // {
-      //   path: 'profile/institute/:university_id',
-      //   component: ProfileInstituteComponent,
-      // },
-      // {
-      //   path: '**',
-      //   component: Error404Component,
-      // }
     ]
   },
 ]
