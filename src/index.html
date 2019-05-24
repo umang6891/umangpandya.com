@@ -38,6 +38,7 @@
 </head>
 <body>
   <app-root>
+    <!-- HTML for loading animation -->
     <div id="loader"> <div id="shadow"></div> <div id="box"></div> <div class="text"> <!-- <span>Please wait...<br>Loading the awesome site.</span> --> </div> </div>
   </app-root>
 
@@ -58,5 +59,11 @@
   <script src="assets/js/scrollax.min.js"></script>
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
   <!-- <script src="assets/js/google-map.js"></script> -->
+  <script>
+    AOS.init({
+     duration: 800,
+     easing: 'slide'
+    });
+  </script>
 </body>
 </html>
