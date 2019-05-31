@@ -1,10 +1,17 @@
-<h1 id="colorlib-logo"><a href=""><img style="width:100px;" src="assets/images/logo.png"/></a></h1>
-<nav id="colorlib-main-menu" role="navigation">
-  <ul>
-    <li *ngFor="let navigation of navigationOptions"
-      routerLinkActive="colorlib-active"
-      [routerLinkActiveOptions]="{exact:true}">
-      <a routerLink="{{navigation.url}}">{{navigation.title}}</a>
-    </li>
-  </ul>
-</nav>
+<div class="d-flex">
+  <div id="colorlib-logo">
+    <a routerLink="">
+      <img style="width:60px;" src="assets/images/logo.png"/>
+    </a>
+  </div>
+  <nav id="colorlib-main-menu" class="text-md-right" role="navigation">
+    <ul>
+      <li *ngFor="let navigation of navigationOptions"
+        routerLinkActive="colorlib-active"
+        [routerLinkActiveOptions]="{exact:true}">
+        <a routerLink="{{navigation.url}}">{{navigation.title}}</a>
+      </li>
+    </ul>
+  </nav>
+
+</div>

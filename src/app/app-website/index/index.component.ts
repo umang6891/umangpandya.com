@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 
 declare var $: any;
 
+var isJSFunctionsLoaded = false;
+
 
 @Component({
   selector: 'app-index',
@@ -13,9 +15,18 @@ export class IndexComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  onOnDidView
 
-  	$(window).stellar({
+  ngOnChanges() {
+  }
+
+
+  ngOnInit() {
+    this.loadJSFunctions();
+  }
+
+  loadJSFunctions() {
+    $(window).stellar({
       responsive: true,
       parallaxBackgrounds: true,
       parallaxElements: true,
@@ -24,31 +35,31 @@ export class IndexComponent implements OnInit {
       scrollProperty: 'scroll'
     });
 
-
   	var fullHeight = function() {
-  		$('.js-fullheight').css('height', $(window).height());
+      $('.js-fullheight').css('height', $(window).height());
   		$(window).resize(function(){
   			$('.js-fullheight').css('height', $(window).height());
+        // 0 0 10px #AAA
   		});
 
   	};
   	fullHeight();
 
   	// loader
-  	var loader = function() {
-  		setTimeout(function() {
-  			if($('#ftco-loader').length > 0) {
-  				$('#ftco-loader').removeClass('show');
-  			}
-  		}, 1);
-  	};
-  	loader();
+  	// var loader = function() {
+  	// 	setTimeout(function() {
+  	// 		if($('#ftco-loader').length > 0) {
+  	// 			$('#ftco-loader').removeClass('show');
+  	// 		}
+  	// 	}, 1);
+  	// };
+  	// loader();
 
   	// Scrollax
-     $.Scrollax();
+    $.Scrollax();
 
 
-     var burgerMenu = function() {
+    var burgerMenu = function() {
 
   		$('.js-colorlib-nav-toggle').on('click', function(event){
   			event.preventDefault();
@@ -191,6 +202,7 @@ export class IndexComponent implements OnInit {
       fixedContentPos: false
     });
 
+    isJSFunctionsLoaded = true;
   }
 
 }

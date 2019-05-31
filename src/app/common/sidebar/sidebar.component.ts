@@ -10,16 +10,18 @@ export class SidebarComponent implements OnInit {
     {
       title: 'Home',
       url: '',
-    }, {
-      title: 'Photography',
-      url: '/photography',
-    }, {
-      title: 'Travel',
-      url: '/travel',
-    }, {
-      title: 'Fashion',
-      url: '/fashion',
-    }, {
+    },
+    // {
+    //   title: 'Photography',
+    //   url: '/photography',
+    // }, {
+    //   title: 'Travel',
+    //   url: '/travel',
+    // }, {
+    //   title: 'Fashion',
+    //   url: '/fashion',
+    // },
+    {
       title: 'Contact',
       url: '/contact',
     },
