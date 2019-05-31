@@ -5,20 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 
 /* Starting Componenets */
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './common/sidebar/sidebar.component';
+import { TopNavigationComponent } from './common/top-navigation/top-navigation.component';
 import { IndexComponent } from './app-website/index/index.component';
 import { BaseComponent } from './app-website/base/base.component';
 import { ContactComponent } from './app-website/contact/contact.component';
+
+import { ErrorComponent } from './app-website/error/error.component';
 /* End Componenets */
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent,
+    TopNavigationComponent,
     IndexComponent,
     BaseComponent,
     ContactComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,

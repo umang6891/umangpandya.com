@@ -3,10 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 /* Starting Componenets */
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './common/sidebar/sidebar.component';
+import { TopNavigationComponent } from './common/top-navigation/top-navigation.component';
 import { IndexComponent } from './app-website/index/index.component';
 import { BaseComponent } from './app-website/base/base.component';
 import { ContactComponent } from './app-website/contact/contact.component';
+
+import { ErrorComponent } from './app-website/error/error.component';
 /* End Componenets */
 
 const routes: Routes = [
@@ -21,6 +23,10 @@ const routes: Routes = [
         path: 'contact',
         component: ContactComponent,
       },
+      {
+        path: '**',
+        component: ErrorComponent,
+      }
     ]
   },
 ]

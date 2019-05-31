@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss']
+  selector: 'app-top-navigation',
+  templateUrl: './top-navigation.component.html',
+  styleUrls: ['./top-navigation.component.scss']
 })
-export class SidebarComponent implements OnInit {
+export class TopNavigationComponent implements OnInit {
   navigationOptions = [
     {
       title: 'Home',
